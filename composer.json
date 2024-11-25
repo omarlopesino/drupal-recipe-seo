@@ -1,0 +1,18 @@
+{
+    "name": "omarlopesino/drupal-recipe-seo",
+    "description": "Modules to make a Drupal site SEO-friendly",
+    "type": "drupal-recipe",
+    "authors": [
+        {
+            "name": "Omar Lopesino",
+            "email": "omar.lopesino@metadrop.net"
+        }
+    ],
+   "require": {
+        "drupal/metatag": "^2.1",
+        "drupal/pathauto": "^1.13",
+        "drupal/redirect": "^1.10",
+        "drupal/simple_sitemap": "^4.2",
+        "drupal/schema_metatag": "^3.0"
+   }
+}
