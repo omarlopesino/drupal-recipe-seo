@@ -8,5 +8,5 @@ description: "Recommended modules to make your site SEO-friendly and have analyt
 type: 'SEO and Analytics'
 
 recipes:
-  - analytics
-  - seo
+  - recipes/drupal-recipe-seo-analytics/analytics
+  - recipes/drupal-recipe-seo-analytics/seo
