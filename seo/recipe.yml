@@ -1,0 +1,35 @@
+# A human-readable name of the Recipe for listing in UIs.
+name: 'SEO'
+description: "Recommended modules to make your site SEO-friendly"
+type: 'SEO'
+
+install:
+  - metatag
+  - pathauto
+  - redirect
+  - simple_sitemap
+  - schema_metatag
+
+config:
+  actions:
+    simple_sitemap.type.default:
+      createIfNotExists:
+        id: default
+        label: Default
+        description: ''
+        sitemap_generator: default
+        url_generators:
+          entity_menu_link_content: entity_menu_link_content
+          entity: entity
+          custom: custom
+          arbitrary: arbitrary
+    simple_sitemap.sitemap.default:
+      createIfNotExists:
+        dependencies:
+          config:
+            - simple_sitemap.type.default
+        id: default
+        label: default
+        description: ''
+        type: default
+        weight: 0

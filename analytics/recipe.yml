@@ -1,0 +1,8 @@
+name: 'Set of modules used to integrate with analytics'
+description: "Recommended modules to make your site gathers analytical data"
+type: 'Analytics'
+
+install:
+  - google_tag
+  - datalayer
+  - datalayer_webform
